@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+@media only screen and (max-width: 320px) {
+    body { 
+       font-size: 2em; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer { 
+       display: block !important; 
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .sidebar{ 
+        display: none;
+        opacity: 0;
+    }
+
+    .right-side-modal {
+        display: none;
+    }
+}
+
+header{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: fit-content;
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 140px;
+    height: 40px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.profile-center{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icons{
+    margin: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.profile-icons:hover{
+    cursor: pointer;
+}
+
+.profile-icons-text{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.profile-icons-text:hover{
+    cursor: pointer;
+}
+
+.container{
+    margin: 40px;
+    display: flex;
+}
+
+.main-container{
+    margin-top: 50px;
+}
+
+:checked{
+    background-color: blueviolet;
+}
+
+
+.heading1{
+    font-size: 48px;
+    font-family: sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.right-side-modal{
+    height: 100%;
+}
+
+.classes-and-info{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.college-name{
+    margin-bottom: 30px;
+}
+
+
+.filter-btn{
+    background-color: blueviolet;
+    height: 35px;
+    width: 85px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
+
+.filter-btn:hover{
+    cursor: pointer;
+}
+
+.prev-class-container{
+    display: flex;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.prev-class{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.prev-class:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.class-name-and-dropdown{
+    height: 20%;
+    background-color: rgb(233,215,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.expand-class-icon{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-and-name{
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+.image-layout-dotted{
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image-box{
+    height: 40.5px;
+    width: 15%;
+    border-style: dashed;
+    margin: auto;
+    border-radius: 5px;
+    border-width: thin;
+}
+
+.study-material-and-data{
+    padding: 20px;
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.study-material-icons{
+    background-color: lavender;
+    font-size: 40px;
+    vertical-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.mat-1{
+    border-radius: 50%;
+    align-items: center;
+    color: blueviolet;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-1-caption{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+
+.mat-2{
+    align-items: center;
+    color: blueviolet;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-2-caption{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+
+
+.mat-3{
+    align-items: center;
+    color: blueviolet;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-3-caption{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+}
+
+.study-material{
+    width: 20%;
+    height: 100%;
+    font-size: 48px;
+    align-items: center;
+}
+
+.symbol-text{
+    font-size: 15px;
+}
+
+.create-class-container{
+    width: fit-content;
+    background-color: oldlace;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.create-class-heading{
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.info-line{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info-text{
+    align-self: center;
+}
+
+.info-text-icon{
+    font-size: large;
+    font-weight: lighter;
+}
+
+.info-text-icon:hover{
+    cursor: default;
+}
+
+.create-class-feature{
+    display: flex;
+    align-items: center;
+}
+
+.create-class-icon-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-class-image-box{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.create-class-image-box:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.create-icon-btn{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+}
+
+.create-icon-btn-caption{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: blueviolet;
+}
+
+.class-key-btn{
+    background-color: oldlace;
+    border-radius: 2px;
+}
+
+.footer{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-icon{
+    font-size: 15px;
+    text-align: center;
+}
+
+.for-school-btn{
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+}
+
+.for-school-btn:hover{
+    cursor: pointer;
+}
+
+
+.help-btn{
+    padding: 6px;
+    font-size: 16px;
+    color: white !important;
+    background-color: blueviolet;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+}
+
+.help-btn:hover{
+    cursor: pointer;
+}
+
+.footer-ele{
+    width: fit-content;
+    margin: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-left, .footer-right{
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar{
+    width: 20%; /* width */
+    height: 100%; /* Full height */
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.right-side-modal{
+    width: 100%;
+    background-color: white;
+}
+
+.modal-heading{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.modal-heading:hover{
+    cursor: pointer;
+}
+
+.sort-by-heading{
+    font-size: larger;
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.sort-by-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.options-container{
+    margin-left: 35px;
+    justify-content: space-around;
+}
+
+#class-name, #start-date, #end-date{
+    margin-bottom: 15px;
+}
+
+.sort-char-options{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fiter-by-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.fiter-by-heading:hover{
+    cursor: pointer;
+}
+
+.filter-by-heading-text{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.confirm-and-reset-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.clear-all-btn{
+    font-weight: bolder;
+    margin: 5px;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.clear-all-btn:hover{
+    cursor: pointer;
+}
+
+.apply-filter-btn{
+    font-weight: bolder;
+    margin: 5px;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+}
+
+.apply-filter-btn:hover{
+    cursor: pointer;
+    background-color: rgb(130, 3, 185);
+}
+
+.fiter-by-next-icon:hover{
+    cursor: pointer;
+}
+
+
+input[name="filter"] {
+	accent-color: blueviolet;
+}
+
+input[name="selected-class"] {
+	accent-color: blueviolet;
+}
