@@ -1,0 +1,29 @@
+Array.prototype.forEach is not designed for asynchronous code. 
+(It was not suitable for promises, and it is not suitable for async-await.)
+
+For example, the following forEach loop might not do what it appears to do:
+const players = await this.getWinners();
+
+// BAD
+await players.forEach(async (player) => {
+  await givePrizeToPlayer(player);
+});
+
+await sendEmailToAdmin('All prizes awarded');
+What's wrong with it?
+    •    The promises returned by the iterator function are not handled. 
+            So if one of them throws an error, the error won't be caught. 
+            (In Node 10, if no unhandledrejectionlistener has been registered, 
+            that will cause the process to crash!)
+    •    Because forEach does not wait for each promise to resolve, all the prizes are awarded 
+            in parallel, not serial (one by one).
+    •    So the loop actually finishes iterating before any of the prizes 
+            have finished been awarded (but after they have all started being awarded).
+    •    As a result, sendEmailToAdmin()sends the email before any of the prizes 
+            have finished being awarded. Maybe none of them will end up being awarded 
+            (they might all throw an error)!
+
+
+Async and Defer in script tag.
+
+0.1 + 0.2 != 0.3 why?

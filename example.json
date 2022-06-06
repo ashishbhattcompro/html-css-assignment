@@ -1,0 +1,144 @@
+[{
+    "classes": {
+        "entities": [
+            {
+                "created": 1622108348209,
+                "class.settings.active": true,
+                "provision_method": "API",
+                "title": "C1 Green Course 3",
+                "class": {
+                    "enddate": 1779874747552,
+                    "instructor": {
+                        "name": "Amit Sharma",
+                        "last_name": "Sharma",
+                        "first_name": "Amit",
+                        "uuid": "e8a70f64-ba29-11eb-b070-0242ac110002",
+                        "email": "at1@yopmail.com",
+                        "username": "4010476d58ff4b00bef65f81cd4edc05--ACCOUNT"
+                    },
+                    "startdate": 1622108347552
+                },
+                "uuid": "6253aa49-becf-11eb-9156-0242ac110003",
+                "ext_classid": "LTI--609126b90970e0df4ff73e0b--4468fdf5c78f429792e9ce4af1f58796--dd4f4901f4e245fabcac35aecdfdffad",
+                "class_code": "7U4u-nmWN",
+                "enrollment": {
+                    "role": "teacher",
+                    "classrole": "teacher"
+                }
+            },
+            {
+                "created": 1617099049965,
+                "class.settings.active": true,
+                "provision_method": "API",
+                "title": "LTI Integrations Class",
+                "class": {
+                    "enddate": 1648548431919,
+                    "instructor": {
+                        "name": "LTI Gateway Tool Teacher",
+                        "last_name": "Teacher",
+                        "first_name": "LTI Gateway Tool",
+                        "uuid": "af9fbb03-913f-11eb-9156-0242ac110003",
+                        "email": "ltigwtoolteacher2@yopmail.com",
+                        "username": "b613788bf4744a8ca70e1c13ca43bbc6--ACCOUNT"
+                    },
+                    "startdate": 1617098831919
+                },
+                "uuid": "33e71a4f-9140-11eb-b070-0242ac110002",
+                "class_code": "ime3-ouVy",
+                "enrollment": {
+                    "role": "teacher",
+                    "classrole": "teacher"
+                }
+            },
+            {
+                "created": 1622630872711,
+                "class.settings.active": true,
+                "provision_method": "API",
+                "title": "Yamini Test Course 101",
+                "class": {
+                    "enddate": 1780397272497,
+                    "instructor": {
+                        "name": "Blackboard Administrator",
+                        "last_name": "Administrator",
+                        "first_name": "Blackboard",
+                        "uuid": "a901504b-ad70-11eb-9156-0242ac110003",
+                        "email": "adminbbcompro@yopmail.com",
+                        "username": "5e3f3e81b5074eb7b7b0de8b70e2e994--ACCOUNT"
+                    },
+                    "startdate": 1622630872497
+                },
+                "uuid": "fb3339b7-c38f-11eb-9156-0242ac110003",
+                "ext_classid": "LTI--609126b90970e0df4ff73e0b--4468fdf5c78f429792e9ce4af1f58796--795c2fbce82445cca13f355b2973c322",
+                "class_code": "hunV-3MVK",
+                "enrollment": {
+                    "role": "teacher",
+                    "classrole": "teacher"
+                }
+            },
+            {
+                "created": 1647346322429,
+                "class.settings.active": true,
+                "provision_method": "API",
+                "title": "dev test course",
+                "class": {
+                    "enddate": 1805112722373,
+                    "instructor": {
+                        "name": "August Teacher",
+                        "last_name": "Teacher",
+                        "first_name": "August",
+                        "uuid": "f3f2d925-b301-11eb-b070-0242ac110002",
+                        "email": "augteacher1@mailsac.com",
+                        "username": "9fda59b4ba4d44878b12638e98f05911--ACCOUNT"
+                    },
+                    "startdate": 1647346322373
+                },
+                "uuid": "33587445-07f3-4962-abd7-7d93024c50d0",
+                "ext_classid": "LTI--y02kCg-WL1GLRqbLvr6OU--4468fdf5c78f429792e9ce4af1f58796--2fd9353333534851a70f525053a62037",
+                "class_code": "2o4V-DW8A",
+                "enrollment": {
+                    "classrole": "creator",
+                    "role": "teacher"
+                },
+                "products": [],
+                "assignments": {}
+            }
+        ],
+        "count": 4
+    },
+    "dls_org_id": "lti-intg-thor",
+    "version": 1,
+    "space_title": "LTI Integrations Test",
+    "dls_account_id": "cup1",
+    "space_type": "institutional",
+    "space_key": "org_lti-intg-thor",
+    "space_org_context": "institution",
+    "space": {
+        "dls_org_id": "lti-intg-thor",
+        "space_key": "org_lti-intg-thor",
+        "space_code": "YMP-RQX-KAF",
+        "space_title": "LTI Integrations Test",
+        "space_type": "institution",
+        "dls_account_id": "cup1",
+        "modified": 1616759131000
+    }
+},
+{
+    "classes": {
+        "entities": [],
+        "count": 0
+    },
+    "dls_account_id": "cup1",
+    "dls_org_id": "aberystwyth-thor",
+    "space_key": "org_aberystwyth-thor",
+    "space_title": "Aberystwyth College - Thor",
+    "space_type": "institutional",
+    "space": {
+        "dls_account_id": "cup1",
+        "dls_org_id": "aberystwyth-thor",
+        "modified": 1643789299392,
+        "space_code": "CZH-ZNW-KMJ",
+        "space_key": "org_aberystwyth-thor",
+        "space_title": "Aberystwyth College - Thor",
+        "space_type": "institution"
+    }
+}]
