@@ -23,7 +23,37 @@ What's wrong with it?
             have finished being awarded. Maybe none of them will end up being awarded 
             (they might all throw an error)!
 
+import and export in js
 
 Async and Defer in script tag.
 
 0.1 + 0.2 != 0.3 why?
+
+shadow dom
+
+garbage collection in js
+
+index db
+
+weak set and weak map
+
+function memoizedAddTo10(){
+  var cache = {};
+
+  return function(num){
+    if(num in cache){
+      console.log("cached value");
+      return cache[num];
+    }
+    else{
+      cache[num] = num + 10;
+      return cache[num];
+    }
+  }
+}
+
+let arr = memoizedAddTo10();
+
+
+domContentLoaded event for defer and async
+

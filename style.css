@@ -96,6 +96,7 @@ header{
 
 .main-container{
     margin-top: 50px;
+    width: 100%;
 }
 
 :checked{
@@ -155,7 +156,7 @@ header{
     height: 450px;
 }
 
-.prev-class.active.image-layout-dotted.image-box{
+.prev-class.active .image-layout-dotted .image-box{
     height: 80.5px;
     width: 80.5px;
     border-style: dashed;
@@ -288,9 +289,7 @@ header{
 }
 
 .create-class-container{
-    width: fit-content;
-    background-color: oldlace;
-    padding: 15px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -311,7 +310,7 @@ header{
 
 .info-text{
     align-self: center;
-    white-space: pre;
+    margin-right: 3px;
 }
 
 .info-text-icon{
@@ -369,6 +368,8 @@ header{
 }
 
 .footer{
+    font-size: 12px;
+    line-height: 16px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
@@ -412,9 +413,18 @@ header{
     color: black;
 }
 
+.footer-ele-div{
+    align-items: center;
+    width: fit-content;
+    margin: 4px;
+    text-decoration: none;
+    color: black;
+}
+
 .footer-left, .footer-right{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -465,7 +475,7 @@ header{
 }
 
 .my-classes-heading{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .sort-by-directing-heading:hover{
@@ -477,9 +487,15 @@ header{
     font-weight: bolder;
 }
 
+.sort-by-radio-btn{
+    justify-content: center;
+}
+
 .sort-by-options{
+    height: fit-content;
     display: flex;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .options-container{
@@ -491,8 +507,30 @@ header{
     margin-bottom: 15px;
 }
 
-.sort-char-options{
+.sort-char-option-1{
     display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sort-char-option-2{
+    display: none;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sort-char-option-3{
+    display: none;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.sort-char-option-4{
+    display: none;
     align-items: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -587,11 +625,15 @@ input[name="selected-class"] {
     display: flex;
 }
 
-.sort-asc-desc, .asc-desc-order{
+.sort-asc,.asc-order{
     color: blueviolet;
 }
 
-.sort-asc-desc:hover{
+.sort-desc, .desc-order{
+    color: blueviolet;
+}
+
+.sort-asc:hover, .sort-desc:hover{
     cursor: pointer;
 }
 
@@ -638,4 +680,17 @@ input[name="selected-class"] {
 .filter-list-elements:hover{
     cursor: pointer;
     background-color: rgb(255, 249, 238);
+}
+
+.create-class-element-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: fit-content;
+    background-color: oldlace;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.create-class-element-container:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
